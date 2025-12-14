@@ -1,0 +1,20 @@
+
+import { Component, OnInit } from '@angular/core';
+import { ApiService } from '../api';
+
+@Component({
+  selector: 'app-users',
+  templateUrl: './component.html',
+  styleUrls: ['./component.sass']
+})
+export class UsersComponent implements OnInit {
+  users: any[] = [];
+
+  constructor(private apiService: ApiService) { }
+
+  ngOnInit(): void {
+    this.apiService.getUsers().subscribe(data => {
+      this.users = data;
+    });
+  }
+}

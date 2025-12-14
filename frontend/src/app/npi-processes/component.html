@@ -1,0 +1,17 @@
+<h2>NPI Processes</h2>
+<table>
+  <thead>
+    <tr>
+      <th>Product ID</th>
+      <th>Process Name</th>
+      <th>Status</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let process of processes">
+      <td>{{ process.product_id }}</td>
+      <td>{{ process.process_name }}</td>
+      <td>{{ process.status }}</td>
+    </tr>
+  </tbody>
+</table>

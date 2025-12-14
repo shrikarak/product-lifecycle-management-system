@@ -1,0 +1,17 @@
+<h2>BOMs</h2>
+<table>
+  <thead>
+    <tr>
+      <th>Product ID</th>
+      <th>BOM Type</th>
+      <th>BOM Data</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let bom of boms">
+      <td>{{ bom.product_id }}</td>
+      <td>{{ bom.bom_type }}</td>
+      <td><pre>{{ bom.bom_data | json }}</pre></td>
+    </tr>
+  </tbody>
+</table>

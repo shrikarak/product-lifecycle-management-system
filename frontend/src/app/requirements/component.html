@@ -1,0 +1,17 @@
+<h2>Requirements</h2>
+<table>
+  <thead>
+    <tr>
+      <th>Product ID</th>
+      <th>Requirement Description</th>
+      <th>Status</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let req of requirements">
+      <td>{{ req.product_id }}</td>
+      <td>{{ req.requirement_description }}</td>
+      <td>{{ req.status }}</td>
+    </tr>
+  </tbody>
+</table>

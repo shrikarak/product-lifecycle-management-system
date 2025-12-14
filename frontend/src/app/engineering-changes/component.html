@@ -1,0 +1,17 @@
+<h2>Engineering Changes</h2>
+<table>
+  <thead>
+    <tr>
+      <th>Product ID</th>
+      <th>Change Description</th>
+      <th>Status</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let change of changes">
+      <td>{{ change.product_id }}</td>
+      <td>{{ change.change_description }}</td>
+      <td>{{ change.status }}</td>
+    </tr>
+  </tbody>
+</table>

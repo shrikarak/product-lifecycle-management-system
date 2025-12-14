@@ -1,0 +1,17 @@
+<h2>Documents</h2>
+<table>
+  <thead>
+    <tr>
+      <th>Product ID</th>
+      <th>Document Type</th>
+      <th>Document Path</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let doc of documents">
+      <td>{{ doc.product_id }}</td>
+      <td>{{ doc.document_type }}</td>
+      <td><a href="{{ doc.document_path }}">Link</a></td>
+    </tr>
+  </tbody>
+</table>

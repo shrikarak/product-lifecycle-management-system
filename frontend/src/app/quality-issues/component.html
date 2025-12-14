@@ -1,0 +1,17 @@
+<h2>Quality Issues</h2>
+<table>
+  <thead>
+    <tr>
+      <th>Product ID</th>
+      <th>Issue Description</th>
+      <th>Status</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let issue of issues">
+      <td>{{ issue.product_id }}</td>
+      <td>{{ issue.issue_description }}</td>
+      <td>{{ issue.status }}</td>
+    </tr>
+  </tbody>
+</table>

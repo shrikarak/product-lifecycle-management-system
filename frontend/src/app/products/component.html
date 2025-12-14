@@ -1,0 +1,21 @@
+<h2>Products</h2>
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+      <th>CAD Model</th>
+      <th>Drawings</th>
+      <th>Parts List</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let product of products">
+      <td>{{ product.name }}</td>
+      <td>{{ product.description }}</td>
+      <td><a href="{{ product.cad_model_path }}">Link</a></td>
+      <td><a href="{{ product.drawings_path }}">Link</a></td>
+      <td><a href="{{ product.parts_list_path }}">Link</a></td>
+    </tr>
+  </tbody>
+</table>
